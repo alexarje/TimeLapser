@@ -7,7 +7,7 @@
 			"revision" : 7
 		}
 ,
-		"rect" : [ 0.0, 44.0, 564.0, 480.0 ],
+		"rect" : [ 35.0, 44.0, 1061.0, 650.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 11.595187,
@@ -30,10 +30,60 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
+					"frgb" : 0.0,
+					"id" : "obj-29",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 248.5, 124.0, 150.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 66.0, 265.0, 59.0, 19.0 ],
+					"text" : "Lagrer fil:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 248.5, 147.0, 205.0, 17.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 66.0, 301.0, 97.0, 43.0 ],
+					"text" : "exportimage 2013-01-29T21-58-54 tiff"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
+					"frgb" : 0.0,
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 63.0, 105.0, 150.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 63.0, 105.0, 58.0, 19.0 ],
+					"text" : "Trykk her"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595187,
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -61,8 +111,18 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 250.0, 299.0, 25.0, 25.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 11.595187,
@@ -98,7 +158,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 277.0, 120.0, 41.0 ],
-									"text" : "exportimage 2012-12-11T19-44-51 tiff"
+									"text" : "exportimage 2013-01-29T21-58-54 tiff"
 								}
 
 							}
@@ -183,6 +243,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-67", 0 ]
 								}
 
 							}
@@ -292,23 +361,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 39.0, 211.0, 320.0, 240.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 24.0, 64.0, 480.0, 360.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"filename" : "jsui_texttoggle.js",
-					"id" : "obj-48",
-					"jsarguments" : [ "on", "off" ],
-					"maxclass" : "jsui",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 109.0, 30.0, 38.0, 19.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 32.0, 41.0, 23.0 ]
+					"presentation_rect" : [ 191.0, 99.0, 480.0, 360.0 ]
 				}
 
 			}
@@ -321,9 +374,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 153.5, 106.0, 17.0, 17.0 ],
+					"patching_rect" : [ 134.5, 107.5, 17.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 275.710632, 32.0, 17.0, 17.0 ]
+					"presentation_rect" : [ 442.710632, 67.0, 17.0, 17.0 ]
 				}
 
 			}
@@ -334,8 +387,8 @@
 					"id" : "obj-58",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "open" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -344,7 +397,7 @@
 							"revision" : 7
 						}
 ,
-						"rect" : [ 330.0, 44.0, 223.0, 357.0 ],
+						"rect" : [ 658.0, 44.0, 223.0, 357.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -364,6 +417,17 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 121.0, 307.0, 25.0, 25.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -513,10 +577,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-57", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 166.5, 288.5, 59.5, 288.5 ],
+									"midpoints" : [ 166.5, 288.5, 130.5, 288.5 ],
 									"source" : [ "obj-16", 1 ]
 								}
 
@@ -550,10 +614,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-57", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 138.0, 216.0, 138.0, 280.0, 59.5, 280.0 ],
+									"midpoints" : [ 138.0, 216.0, 138.0, 280.0, 130.5, 280.0 ],
 									"source" : [ "obj-53", 1 ]
 								}
 
@@ -615,7 +679,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 109.0, 52.0, 20.0, 20.0 ]
+					"patching_rect" : [ 109.0, 52.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 66.0, 124.0, 97.0, 97.0 ]
 				}
 
 			}
@@ -787,7 +853,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
 					"id" : "obj-24",
-					"items" : [ "Logitech Camera", ",", "FaceTime Camera (Built-in)" ],
+					"items" : [ "Logitech Camera", ",", "Built-in iSight" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -795,7 +861,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 192.0, 653.0, 145.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 115.0, 32.0, 145.0, 19.0 ]
+					"presentation_rect" : [ 282.0, 67.0, 145.0, 19.0 ]
 				}
 
 			}
@@ -963,7 +1029,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "open" ],
 									"patching_rect" : [ 75.0, 54.0, 25.0, 25.0 ]
 								}
 
@@ -1158,7 +1224,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "open" ],
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
@@ -1204,7 +1270,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
+													"outlettype" : [ "open" ],
 													"patching_rect" : [ 34.0, 39.0, 15.0, 15.0 ]
 												}
 
@@ -1250,8 +1316,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 75.0, 168.0, 296.0, 29.0 ],
-									"text" : "jit.qt.grab 1600 1200 @unique 1",
+									"patching_rect" : [ 75.0, 168.0, 381.0, 29.0 ],
+									"text" : "jit.qt.grab 1600 1200 @unique 1 @input 0",
 									"varname" : "grabber"
 								}
 
@@ -1791,7 +1857,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 618.0, 265.0, 51.0, 44.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 11.0, 503.0, 430.0 ]
+					"presentation_rect" : [ 182.0, 46.0, 503.0, 430.0 ]
 				}
 
 			}
@@ -1869,6 +1935,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -2077,15 +2152,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2116,8 +2182,16 @@
 					"destination" : [ "obj-47", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 118.5, 101.0, 118.5, 101.0 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-58", 1 ]
 				}
 
 			}
@@ -2272,16 +2346,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "jsui_texttoggle.js",
-				"bootpath" : "/Applications/Max6/Cycling '74/jsui-library",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/Cycling '74/jsui-library",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "jcom.datetime.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/datetime",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/datetime",
+				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/library/components/datetime",
 				"type" : "JSON",
 				"implicit" : 1
 			}
