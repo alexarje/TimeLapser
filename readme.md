@@ -29,5 +29,6 @@ http://www.gnu.org/copyleft/gpl.html
 
 ## History ## 
 
+v0.3: Cleaning up a little more
 v0.2: Removing crap and fixing inputs
 v0.1: First working version
