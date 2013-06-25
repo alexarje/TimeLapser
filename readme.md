@@ -1,12 +1,12 @@
-# TimeLapser #
+# TimeLapser
 
 Version: 	   0.1  
 Created date:  2012-12-11  
 Modified date: 2012-12-11  
 
-## What can it do? ## 
+## Description
 
-TimeLapser saves an image from a webcam at a regular interval (1 minute). Each image is saved with the time code as the name of the file. It was developed for an art project, but can probably be useful for other timelapse applications. 
+TimeLapser takes an image from a webcam at a regular interval (1 minute). Each image is saved with the time code as the name of the file, making it easy to use the images for documentation purposes or assembling the images into timelapse videos. The application was originally developed for an art project, but can probably be useful for other timelapse applications as well. 
 
 
 ## Usage ## 
