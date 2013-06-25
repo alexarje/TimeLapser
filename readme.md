@@ -6,7 +6,7 @@ Modified date: 2013-06-25
 
 ## Description
 
-TimeLapser takes an image from a webcam at a regular interval (1 minute). Each image is saved with the time code as the name of the file, making it easy to use the images for documentation purposes or assembling the images into timelapse videos. The application was originally developed for an art project, but can probably be useful for other timelapse applications as well. 
+TimeLapser takes an image from a webcam at a regular interval (1 minute). Each image is saved with the time code as the name of the file, making it easy to use the images for documentation purposes or assembling the images into timelapse videos. The application was originally developed for an [art project](http://www.arj.no/2013/06/25/timelapser/), but can probably be useful for other timelapse applications as well. 
 
 ![TimeLapser screenshot](https://raw.github.com/alexarje/TimeLapser/master/documentation/TimeLapser-screenshot.png)
 
